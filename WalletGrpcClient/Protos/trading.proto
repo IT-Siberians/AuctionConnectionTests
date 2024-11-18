@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package WalletTraiding;
+package WalletTrading;
 
 option csharp_namespace = "WalletGrpcClient";
 
-service Traiding {
+service Trading {
     rpc PayForLot(PayForLotCommandGrpc) returns (BaseResponseGrpc);
     rpc RealeaseMoney(RealeaseMoneyCommandGrpc) returns (BaseResponseGrpc);
     rpc ReserveMoney(ReserveMoneyCommandGrpc) returns (BaseResponseGrpc);

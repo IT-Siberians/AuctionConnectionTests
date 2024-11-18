@@ -8,7 +8,7 @@ using WalletGrpcClient;
 using var channel = GrpcChannel.ForAddress("https://localhost:7142");
 
 // создаем клиент
-var client = new Traiding.TraidingClient(channel);
+var client = new Trading.TradingClient(channel);
 
 // Здесь должны быть ошибки:
 await ReserveMoney("", 0, "", "", "");
